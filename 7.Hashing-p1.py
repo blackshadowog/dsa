@@ -14,3 +14,18 @@ for num in m:
         print(0)
     else:
         print(hash_list[num])
+
+
+
+#using dict for hashing 
+
+
+hf = {}
+for num in n :
+    hf[num] = hf.get(num, 0) +1
+
+for nums in m :
+    if nums in hf :
+        print(hf[nums])
+    else:
+        print(0)
